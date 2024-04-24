@@ -26,7 +26,7 @@ class FilenameChecker(object):
         kwargs = {'action': 'store', 'default': '', 'parse_from_config': True,
                   'comma_separated_list': True}
         for num in range(cls.min_check, cls.max_check):
-            parser.add_option(None, "--filename_check{}".format(num), **kwargs)
+            parser.add_option("--filename_check{}".format(num), **kwargs)
 
     @classmethod
     def parse_options(cls, options):
